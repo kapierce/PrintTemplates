@@ -8,17 +8,17 @@
 {% set firefox_margin_fix = false %}                {# Fixes issue with margins cutting off when printing on a letter printer on a Mac #}
 
 {# Item Lines #}
-{% set per_line_discount = false %}                 {# Displays Discounts on each Sale Line #}
-{% set per_line_subtotal = false %}                 {# Displays Subtotals for each Sale Line (ex: "1 x $5.00") #}
-{% set discounted_line_items = false %}             {# Strikes out the original price and displays the discounted price on each Sale Line #}
-{% set per_line_employee = false %}                 {# Display Employee for each Sale line #}
-{% set show_custom_sku = false %}                   {# Adds SKU column for Custom SKU, if available, on each Sale Line #}
+{% set per_line_discount = true %}                 {# Displays Discounts on each Sale Line #}
+{% set per_line_subtotal = true %}                 {# Displays Subtotals for each Sale Line (ex: "1 x $5.00") #}
+{% set discounted_line_items = true %}             {# Strikes out the original price and displays the discounted price on each Sale Line #}
+{% set per_line_employee = true %}                 {# Display Employee for each Sale line #}
+{% set show_custom_sku = true %}                   {# Adds SKU column for Custom SKU, if available, on each Sale Line #}
 {% set show_manufacturer_sku = false %}             {# Adds SKU column for Manufacturer SKU, if available, on each Sale Line #}
-{% set show_msrp = false %}                         {# Adds MSRP column for the items MSRP, if available, on each Sale Line #}
+{% set show_msrp = true %}                         {# Adds MSRP column for the items MSRP, if available, on each Sale Line #}
 
 {# Misc. Adjustments #}
 {% set show_thank_you = true %}                     {# Displays "Thank You <Customer Name>!" above bottom barcode #}
-{% set show_transaction_item_count = false %}       {# Gives a total quantity of items sold near the bottom of the receipt #}
+{% set show_transaction_item_count = true %}       {# Gives a total quantity of items sold near the bottom of the receipt #}
 {% set show_sale_lines_on_store_copy = false %}     {# Shows Sale Lines on Credit Card Store Copy receipts #}
 {% set quote_to_invoice = false %}                  {# Changes Quote wording to Invoice in Sales and in Sale Quotes (does not apply to Work Order Quotes) #}
 {% set show_sale_lines_on_gift_receipt = true %}    {# Displays Sale Lines on Gift Receipts #}
@@ -26,8 +26,8 @@
 {% set show_barcode_sku = true %}                   {# Displays the System ID at the bottom of barcodes #}
 
 {# Customer Information #}
-{% set show_full_customer_address = false %}        {# Displays Customers full address, if available #}
-{% set show_customer_name_only = true %}            {# Hides all Customer information except for their name #}
+{% set show_full_customer_address = true %}        {# Displays Customers full address, if available #}
+{% set show_customer_name_only = false %}            {# Hides all Customer information except for their name #}
 {% set show_customer_notes = false %}               {# Displays Notes entered in the Customers profile #}
 {% set company_name_override = false %}             {# Does not display the Customer Name if Company Name is present #}
 
